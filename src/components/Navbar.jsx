@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom';
-import { ShoppingCart, User } from 'lucide-react';
+import { ShoppingCart, User, Pizza } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <header style={{ backgroundColor: 'var(--white)', borderBottom: '1px solid var(--border-color)', position: 'sticky', top: 0, zIndex: 10 }}>
-      <div className="container flex items-center justify-between" style={{ height: '64px' }}>
+    <header className="glass" style={{ position: 'sticky', top: 0, zIndex: 10 }}>
+      <div className="container flex items-center justify-between" style={{ height: '72px' }}>
         <Link to="/" className="flex items-center gap-2">
-          <span style={{ color: 'var(--primary-color)', fontWeight: 'bold', fontSize: '1.5rem' }}>Aura</span>
+          <Pizza color="var(--primary-color)" size={32} />
+          <span style={{ color: 'var(--primary-color)', fontWeight: '900', fontSize: '1.75rem', letterSpacing: '-0.025em' }}>Crave</span>
         </Link>
         
         <nav className="flex items-center gap-6" style={{ display: 'none' }} id="desktop-nav">
-          <Link to="/" style={{ fontWeight: 500 }}>Home</Link>
-          <Link to="/catalogue" style={{ fontWeight: 500 }}>Catalogue</Link>
-          <Link to="/about" style={{ fontWeight: 500 }}>About</Link>
-          <Link to="/contact" style={{ fontWeight: 500 }}>Contact</Link>
+          <Link to="/" style={{ fontWeight: 600 }}>Home</Link>
+          <Link to="/menu" style={{ fontWeight: 600 }}>Menu</Link>
+          <Link to="/about" style={{ fontWeight: 600 }}>About</Link>
+          <Link to="/contact" style={{ fontWeight: 600 }}>Contact</Link>
         </nav>
         <style>{`
           @media (min-width: 768px) { #desktop-nav { display: flex !important; } }

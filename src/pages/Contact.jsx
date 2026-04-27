@@ -4,14 +4,14 @@ const Contact = () => {
       <h1 className="text-center mb-8" style={{ textAlign: 'center', marginBottom: '2rem' }}>Contact Us</h1>
       <div className="grid md:grid-cols-2 gap-12" style={{ maxWidth: '900px', margin: '0 auto' }}>
         <div>
-          <h3 className="mb-4" style={{ marginBottom: '1rem' }}>Get in Touch</h3>
-          <p className="mb-6" style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-            Have a question about a product, your order, or just want to say hello? We'd love to hear from you.
+          <h3 className="mb-4" style={{ marginBottom: '1rem', fontWeight: 800 }}>Get in Touch</h3>
+          <p className="mb-6" style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+            Have a question about a dish, your food order, or just want to tell us how much you loved your meal? We're all ears.
           </p>
-          <div className="flex flex-col gap-4" style={{ color: 'var(--text-main)' }}>
-            <p><strong>Email:</strong> support@aura.com</p>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Address:</strong> 123 Innovation Drive, Tech City, CA 90210</p>
+          <div className="flex flex-col gap-4" style={{ color: 'var(--text-main)', fontSize: '1.1rem' }}>
+            <p><strong>Email:</strong> support@crave.com</p>
+            <p><strong>Phone:</strong> +1 (800) HOT-FOOD</p>
+            <p><strong>Kitchen:</strong> 123 Culinary Lane, Foodie City, CA 90210</p>
           </div>
         </div>
         <div className="card p-6" style={{ padding: '1.5rem' }}>
