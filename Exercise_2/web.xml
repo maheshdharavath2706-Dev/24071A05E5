@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>FoodServlet</servlet-name>
+        <servlet-class>FoodServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FoodServlet</servlet-name>
+        <url-pattern>/FoodServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
